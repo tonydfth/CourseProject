@@ -76,3 +76,8 @@ load_trainingset(train_dir, stemming, lower_case, silently)
 This function is called to load the training set and labels into the application during the training phase. The training data is stored in the train folder within the data folder. The data is separated into negative and positive reviews. This function returns two lists of lists of words, one for all the positive reviews and the other for all the negative reviews. 
 
 ## Usage Documentation
+
+In order to run this application, you'll need:
+```
+python3
+project source code: 
