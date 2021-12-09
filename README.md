@@ -45,8 +45,11 @@ This function takes in the documents used for training and the predetermined lab
 ```
 single(positiveWords, negativeWords, text):
 ```
-This function is called when the mode is set to single review. 
-
+This function is called when the mode is set to single review. This will take in the lists of positive and negative words. A txt document will be loaded into the function. With each word in the document, the word is matched from the unigram model of the two lists. If there is a match, the probability will be added onto the corresponding sentiment. If the word has never been seen in the training model, a set constant determined in training will be applied. At the end, the total positive probability will be compared against the total negative probability. This way, the overall sentiment of the input text will be determined.
+```
+multiple(positiveWords, NegativeWords, dev_set):
+```
+This function works very similarly with the single function. However, instead of one text, a collection of reviews within the specified fold is inputted as "dev_set". Every review is processed in the same way as above. The function outputs the number of positive reviews and negative reviews within the input folder. It will then determine the sentiment of the product/service based on the number of reviews from each side.
 
 ### util.py
 
