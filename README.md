@@ -37,6 +37,8 @@ main.py is called in order to run the application. When calling this function, t
 
 ### unigram.py
 
+This is where the main algorithms of this application is stored. This includes functions to train the unigram model, and functions to perform sentiment analysis on the input text.
+
 The application will first take in the training set and its corresponding labels to generate two lists of words. One for the probability of words that show up in the negative reviews, and another one for positive reviews. Those two lists and are then used to match with each word in the input reviews to determine if a particle review is more positive or negative.
 
 ```
@@ -55,6 +57,7 @@ multiple(positiveWords, NegativeWords, dev_set):
 This function works very similarly with the single function. However, instead of one text, a collection of reviews within the specified fold is inputted as "dev_set". Every review is processed in the same way as above. The function outputs the number of positive reviews and negative reviews within the input folder. It will then determine the sentiment of the product/service based on the number of reviews from each side.
 
 ### util.py
+
 
 
 ## Usage Documentation
