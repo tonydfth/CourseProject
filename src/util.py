@@ -13,7 +13,7 @@ tokenizer = RegexpTokenizer(r'\w+')
 bad_words = {'aed', 'oed', 'eed'}  # these words fail in nltk stemmer algorithm
 
 
-def loadSingle(name, stemming, lower_case, silently=False):
+def loadSingle(name, stemming, lower_case):
     text = []
     f = open(name, 'rb')
     for line in f:
