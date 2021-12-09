@@ -26,4 +26,19 @@ This can be used to obtain the public’s opinion on the desired product/service
 
 ## Implementation Documentation
 
+There are three main files in the source code:
+-main.py
+The main driver of this application.
+-unigram.py
+This includes all the algorithms used to produce the unigram model and performs the sentiment analysis on the reviews
+-util.py
+This includes the functions used to load all the data used
+
+### main.py
+
+### unigram.py
+
+### util.py
+
+
 ## Usage Documentation
