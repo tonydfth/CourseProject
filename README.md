@@ -58,6 +58,21 @@ This function works very similarly with the single function. However, instead of
 
 ### util.py
 
+This is where the functions for loading both the training data and input text into the application. This reads the txt files stored in the data folder in the source code. It tokenizes each review. During the process, words are all converted into lowercase letters. Stemming is also utilized.
 
+```
+loadSingle(name, stemming, lower_case):
+```
+This loads a single txt file from the data folder. This file path is defined by the in-line command statement when calling main.py. In this function, the txt file is turned into a list of words, all lowercase with stemming applied. Stemming and lowercase can be turned off to increase the speed of the application when testing for functions, but doing so will decrease the accuracy a lot. This function returns a list of words. 
+
+```
+loadDir(name, stemming, lower_case, silently):
+```
+This works the same way as loadSingle, but for a collection of reviews. The name variable is the file path that directs to the folder where the desired collection of reviews is stored. This returns a list of lists of words.
+
+```
+load_trainingset(train_dir, stemming, lower_case, silently)
+```
+This function is called to load the training set and labels into the application during the training phase. The training data is stored in the train folder within the data folder. The data is separated into negative and positive reviews. This function returns two lists of lists of words, one for all the positive reviews and the other for all the negative reviews. 
 
 ## Usage Documentation
