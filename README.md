@@ -80,7 +80,8 @@ This function is called to load the training set and labels into the application
 In order to run this application, you'll need:
 ```
 - python3
-- project source code: [src.zip](https://github.com/tonydfth/CourseProject/files/7685287/src.zip)
+- project source code: [src.zip](https://github.com/tonydfth/CourseProject/files/7685528/src.zip)
+
 ```
 
 Either clone the repository or copy paste the above link into a browser to download the source code.
