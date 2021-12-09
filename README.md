@@ -41,7 +41,11 @@ The application will first take in the training set and its corresponding labels
 ```
 wordProbability(train_set, train_labels, review, laplace)
 ```
-This function takes in the documents used for training and the predetermined labels that classifies them as a positive or negative review. This function is ran twice, once for positive reviews and one for negative reviews. For each list, the probability of the word showing up in a review of the specified sentiment is recorded. The probability for unseen words is also stored. Laplace smoothing is used to get more accurate data.
+This function takes in the documents used for training and the predetermined labels that classifies them as a positive or negative review. This function is ran twice, once for positive reviews and one for negative reviews. For each list, the probability of the word showing up in a review of the specified sentiment is recorded. The probability for unseen words is also stored. Laplace smoothing is used to improve the accurate of the model.
+```
+single(positiveWords, negativeWords, text):
+```
+This function is called when the mode is set to single review. 
 
 
 ### util.py
