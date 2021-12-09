@@ -33,7 +33,16 @@ There are three main files in the source code:
 
 ### main.py
 
+main.py is called in order to run the application. When calling this function, the mode, training set, and documents to be reviewed can be specified through in-line commands. The program first trains the unigram model using the training set. Depend on which mode is selected, the program then performs the desired tasks on the documents selected.
+
 ### unigram.py
+
+The application will first take in the training set and its corresponding labels to generate two lists of words. One for the probability of words that show up in the negative reviews, and another one for positive reviews. Those two lists and are then used to match with each word in the input reviews to determine if a particle review is more positive or negative.
+```
+wordProbability(train_set, train_labels, review, laplace)
+```
+This function takes in the documents used for training and the predetermined labels that classifies them as a positive or negative review. This function is ran twice, once for positive reviews and one for negative reviews. For each list, the probability of the word showing up in a review of the specified sentiment is recorded. The probability for unseen words is also stored. Laplace smoothing is used to get more accurate data.
+
 
 ### util.py
 
