@@ -16,7 +16,7 @@ def main(args):
     if args.mode == "single":
         text = util.loadSingle(args.development_dir, True, True, True)
         print(uni.single(positiveWords, negativeWords, text))
-    elif args.mode == "multiple":
+    elif args.mode == "collection":
         dev = util.loadDir(args.development_dir, True, True)
         pos, neg, decision = uni.multiple(positiveWords, negativeWords, dev)
         print('Number of positive reviews:', pos)
