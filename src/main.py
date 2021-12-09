@@ -14,7 +14,7 @@ def main(args):
         print('Please define development set')
         return
     if args.mode == "single":
-        text = util.loadSingle(args.development_dir, True, True, True)
+        text = util.loadSingle(args.development_dir, True, True)
         print(uni.single(positiveWords, negativeWords, text))
     elif args.mode == "collection":
         dev = util.loadDir(args.development_dir, True, True)
