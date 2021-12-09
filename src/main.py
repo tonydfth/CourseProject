@@ -28,7 +28,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Course Project for CS410: Sentiment Analysis for Video game reviews')
     parser.add_argument('--mode', dest="mode", type=str, default = 'none', help='Select either single review mode or multiple review mode')
-    parser.add_argument('--training', dest='training_dir', type=str, default='data/reviews/train',
+    parser.add_argument('--training', dest='training_dir', type=str, default='data/train',
                         help='the directory of the training data')
     parser.add_argument('--source', dest='development_dir', type=str, default='none',
                         help='the directory/file of the development data')
