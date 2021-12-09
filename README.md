@@ -83,6 +83,8 @@ In order to run this application, you'll need:
 - project source code: [src.zip](https://github.com/tonydfth/CourseProject/files/7685287/src.zip)
 ```
 
+Either clone the repository or copy paste the above link into a browser to download the source code.
+
 After downloading the unzipping the project source code (src.zip above), you'll see the three files listed above and the data folder. 
 Currently, the training data is 6000 positive movie reviews and 2000 negative movie reviews. This data is provided by the University of Illinois. This should be changed based on what type of product/service the unigram model is training for. 
 
