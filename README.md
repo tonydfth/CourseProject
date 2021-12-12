@@ -2,6 +2,10 @@
 
 Please fork this repository and paste the github link of your fork on Microsoft CMT. Detailed instructions are on Coursera under Week 1: Course Project Overview/Week 9 Activities.
 
+# Project Presentation 
+
+https://mediaspace.illinois.edu/media/t/1_k2m1d94o
+
 # Project Documentation
 
 The purpose of this project is to train a binary sentiment classifier using the Naïve Bayes algorithm. At the end, a unigram model will be produced that has the ability to identify if a single review is positive/negative, or if something is positively/negatively reviewed based on a collection of reviews.
@@ -79,5 +83,33 @@ This function is called to load the training set and labels into the application
 
 In order to run this application, you'll need:
 ```
-python3
-project source code: 
+- python3
+- project source code: [src.zip](https://github.com/tonydfth/CourseProject/files/7685528/src.zip)
+
+```
+
+Either clone the repository or copy paste the above link into a browser to download the source code.
+
+After downloading the unzipping the project source code (src.zip above), you'll see the three files listed above and the data folder. 
+Currently, the training data is 6000 positive movie reviews and 2000 negative movie reviews. This data is provided by the University of Illinois. This should be changed based on what type of product/service the unigram model is training for. 
+
+To checkout the command, copy and paste the code below in a terminal window:
+```
+python3 main.py -h
+```
+You'll see an option to select single or collection review, and options to change the file path for training and testing data. The training data file path is default to be the data/train folder. The testing data needs to be specified every time the application is ran. 
+
+Within the data folder, there are four pre-existing test cases. A negative and a positive review for single review, and a positive and a negative folder for collection review.
+
+To test run single review:
+```
+python3 main.py --mode single --source '$filepath'
+```
+
+To test run collection review:
+```
+python3 main.py --mode collection --source '$filepath'
+```
+
+Note that the file path for single review should lead to a txt document, and the file path for collection review should lead to a folder of txt documents. 
+
